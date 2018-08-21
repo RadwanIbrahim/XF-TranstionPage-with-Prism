@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.linkdev.gemtest" android:installLocation="auto">
+	<uses-sdk android:minSdkVersion="21" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<application android:label="GEM.Mobile.Android" android:icon="@mipmap/ic_launcher">
+    <activity android:name="microsoft.identity.client.BrowserTabActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW" />
+        <category android:name="android.intent.category.DEFAULT" />
+        <category android:name="android.intent.category.BROWSABLE" />
+        <data android:scheme="msal820a0abc-896d-4ee1-a275-50db002d3149" android:host="auth" />
+      </intent-filter>
+    </activity>
+  </application>
+</manifest>
